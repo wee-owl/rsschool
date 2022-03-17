@@ -30,7 +30,7 @@ Recently, I wanted to change my occupation and do front-end development. This is
 [Codewars.com](https://www.codewars.com/)  
 **Task «Multiply the number»:** Multiply each number by 5 raised to the number of digits of each number  
 
-```   
+``` js script  
 function multiply(number, y) {  
   function numDigits(number) {  
     return Math.max(Math.floor(Math.log10(Math.abs(number))), 0) + 1;  
