@@ -48,6 +48,9 @@ return number*y;
 **About:** News portal created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform  
 To make it work you need to download zip on your desktop  
 **Link to github:** [News-aggregator](https://github.com/wee-owl/News-aggregator)  
+- Game [Tetris](https://wee-owl.github.io/Tetris/)  
+**About:** The Tetris game created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform    
+**Link to github:** [Tetris](https://github.com/wee-owl/Tetris)  
 
 ## Education  
 1. National university of science and technology «MISIS», Moscow  
