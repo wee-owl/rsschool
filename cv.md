@@ -41,9 +41,16 @@ return number*y;
 ```  
 
 ## Projects  
-Promo site [«The Batman project»](https://wee-owl.github.io/The-Batman-Project/)  
+- Promo site [«The Batman project»](https://wee-owl.github.io/The-Batman-Project/)  
 **About:** It's a trial project created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform  
 **Link to github:** [The-Batman-Project](https://github.com/wee-owl/The-Batman-Project/)  
+- News portal [News aggregator](https://wee-owl.github.io/News-aggregator/)  
+**About:** News portal created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform  
+To make it work you need to download zip on your desktop  
+**Link to github:** [News-aggregator](https://github.com/wee-owl/News-aggregator)  
+- Game [Tetris](https://wee-owl.github.io/Tetris/)  
+**About:** The Tetris game created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform    
+**Link to github:** [Tetris](https://github.com/wee-owl/Tetris)  
 
 ## Education  
 1. National university of science and technology «MISIS», Moscow  
