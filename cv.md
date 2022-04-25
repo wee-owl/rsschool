@@ -8,8 +8,8 @@
 **Discord:** [LenOk](http://discordapp.com/users/#6731)  
 
 ### About myself  
-I worked for a government organization for a long time (about 7 years), was engaged in engineering, development and implementation of SDO management systems. During this period, I have gained a lot of practical experience and a lot of important skills.  
-Recently, I wanted to change my occupation and do front-end development. This is a specialist of a wide profile: layout designer, programmer, artist and engineer all rolled into one, which means a wide range of opportunities. I am currently actively studying this area in order to become a highly qualified front-end developer in the future. I enjoy studying of this area and I devote all time to this.
+For a long time (more than 7 years) I have been working in a state organization, I am engaged in the design, development and implementation of SDO management systems. During this time I have gained a lot of practical experience and many important skills.
+Recently, I wanted to study front-end development. This is a specialist of a wide profile: layout designer, programmer, artist and engineer all rolled into one, which means ample opportunities. Now I actively and with great pleasure study this area and devote all my time to it.
 
 ## Key skills  
 #### Hard skills  
