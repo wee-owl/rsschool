@@ -1,4 +1,4 @@
-# rsschool-cv  
-## Links to CV  
-[https://wee-owl.github.io/rsschool-cv/cv](https://wee-owl.github.io/rsschool-cv/cv)  
-[https://wee-owl.github.io/rsschool-cv/](https://wee-owl.github.io/rsschool-cv/)  
+# TravelPortal
+
+## Project description
+TravelPortal — task RSSchool/stage#0, during which a landing site for travel planning is created, its adaptability and interactivity are implemented.
