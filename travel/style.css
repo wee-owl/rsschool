@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Aleo";
-    src: url("/fonts/Aleo-Regular.ttf");
+    src: url("/travel/fonts/Aleo-Regular.ttf");
     font-display: swap;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Magra";
-    src: url("/fonts/Magra-Regular.ttf");
+    src: url("/travel/fonts/Magra-Regular.ttf");
     font-display: swap;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Red_Hat_Text";
-    src: url("/fonts/RedHatText-Regular.ttf");
+    src: url("/travel/fonts/RedHatText-Regular.ttf");
     font-display: swap;
     font-weight: 400;
 }
@@ -23,6 +23,7 @@ html {
     position: relative;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 *, *:after, *:before {
@@ -53,25 +54,21 @@ button {
 input, button {
     font: inherit;
 }
-/*
-img, svg {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-*/
-.header {
+
+.header__position {
     position: absolute;
     width: 100vw;
     height: 90px;
+    align-items: center;
     background-color: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
-.header__position {
-    position: absolute;
-    left: calc((100% - 1440px)/2);
+.header__wrapper {
     display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1440px;
 }
 
 .logo {
@@ -100,7 +97,7 @@ img, svg {
 }
 
 .navigation {
-    margin: 35px 0 35px 158px;
+    margin: 35px 196px 35px 158px;
 }
 
 .nav__list {
@@ -114,12 +111,19 @@ img, svg {
     font-weight: 500;
     letter-spacing: 0.4px;
     color: #FFFFFF;
+    transition: 1s;
+}
+
+.items:hover {
+    transform: scale(1.2);
+    color: #0D606F;
+    font-weight: bold;
 }
 
 .login__button {
-    width: 103px;
+    min-width: 103px;
     height: 41px;
-    margin: 25px 120px 24px 196px;
+    margin: 25px 120px 24px 0;
     font-family: "Red_Hat_Text";
     font-size: 16px;
     font-weight: 500;
@@ -139,16 +143,14 @@ img, svg {
     width: 100vw;
     height: 765px;
     padding-top: 122px;
-    padding-left: calc((100% - 1440px)/2 + 120px);
-    background: url(/img/preview.png) no-repeat center;
+    background: url("/travel/img/preview.jpg") no-repeat center;
     background-size: cover;
 }
 
 .hero {
     position: relative;
     max-width: 892px;
-    display: grid;
-    gap: 34px;
+    margin-left: calc((100% - 1440px)/2 + 120px);
 }
 
 .title {
@@ -160,6 +162,7 @@ img, svg {
 }
 
 .subtitle {
+    margin: 33px 0 46px 0;
     font-family: "Aleo";
     font-style: italic;
     font-size: 20px;
@@ -219,7 +222,6 @@ img, svg {
 .search__input::-webkit-search-results-button,
 .search__input::-webkit-search-results-decoration
 */
-
 .search__button {
     width: 228px;
     height: 59px;
@@ -240,8 +242,11 @@ img, svg {
 
 .steps {
     display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
+
 }
 
 .steps__info {
@@ -260,7 +265,7 @@ img, svg {
 
 .steps__content {
     display: flex;
-    width: 1177px;
+    max-width: 1177px;
     justify-content: center;
 }
 
@@ -384,19 +389,7 @@ img, svg {
 .label__button__active {
     background: #F2785C;
 }
-/*
-#radio1:checked~.active {
-    margin-left: -40%;
-}
 
-#radio2:checked~.active {
-    margin-left: 0%;
-}
-
-#radio3:checked~.active {
-    margin-left: -75%;
-}
-*/
 .destin__button {
     display: flex;
     justify-content: space-between;
@@ -445,7 +438,7 @@ img, svg {
     margin: auto;
     left: 0; 
     right: 0;
-    background: url(/img/bg.png) no-repeat center;
+    background: url("/travel/img/bg.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -535,18 +528,32 @@ img, svg {
     position: absolute;
     z-index: 999;
     display: flex;
-    gap: 328px;
     margin: 0 auto;
-    left: calc((100% - 1440px)/2 + 590px);
-    bottom: -1322px;
+    left: calc((100% - 1200px)/2);
+    bottom: -1330px;
     align-items: center;
 }
 
+#rss, #github {
+    transition: 1s;
+}
+
+#rss:hover, #github:hover {
+    transform: scale(1.2);
+}
+
+.footer__logo {
+    white-space: nowrap;
+    transition: 1s;
+}
+
 .footer__copyright {
+    margin: 0 328px 0 265px;
     font-family: "Red_Hat_Text";
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.4px;
+    white-space: nowrap;
     color: #FFFFFF;
     text-align: center;
 }
@@ -558,4 +565,9 @@ img, svg {
 
 .footer__link {
     color: #F8F8F8;
+    transition: 1s;
+}
+
+.footer__link:hover {
+    transform: scale(1.2);
 }
