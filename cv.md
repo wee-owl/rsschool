@@ -8,8 +8,7 @@
 **Discord:** [LenOk](http://discordapp.com/users/#6731)  
 
 ### About myself  
-For a long time (more than 7 years) I have been working in a state organization, I am engaged in the design, development and implementation of SDO management systems. During this time I have gained a lot of practical experience and many important skills.
-Recently, I wanted to study front-end development. This is a specialist of a wide profile: layout designer, programmer, artist and engineer all rolled into one, which means ample opportunities. Now I actively and with great pleasure study this area and devote all my time to it.
+For a long time (more than 7 years) I have been working in a state organization, I am engaged in the design, development and implementation of SDO (the State Defense Order) management systems. During this time I have gained a lot of practical experience and many important skills. I recently started learning front-end development. Now I actively and with great pleasure study this area and devote all my time to it.
 
 ## Key skills  
 #### Hard skills  
@@ -51,6 +50,9 @@ To make it work you need to download zip on your desktop
 - Game [Tetris](https://wee-owl.github.io/Tetris/)  
 **About:** The Tetris game created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform    
 **Link to github:** [Tetris](https://github.com/wee-owl/Tetris)  
+- Site [E-Trans](https://wee-owl.github.io/E-Trans/)  
+**About:** Site is created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform  
+**Link to github:** [E-Trans](https://github.com/wee-owl/E-Trans)  
 
 ## Education  
 1. National university of science and technology «MISIS», Moscow  
@@ -62,11 +64,9 @@ To make it work you need to download zip on your desktop
 
 ## Courses  
 * [RS School](https://rs.school/) course:  
-    + Java Script/Front-end. Stage 1 (in progress)  
-* [National Open University «INTUIT»](https://intuit.ru/) courses:  
-    + Computing systems  
-    + Introduction to programming languages  
-    + Working with databases  
+    + Java Script/Front-end. Stage 0 (in progress)  
+* [Netology](https://netology.ru/) course:  
+    + Frontend developer from scratch    
 
 ## Languages  
 **Russian**  –  native  
