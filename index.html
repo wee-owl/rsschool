@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korobova Elena</title>
+    <link rel="icon" href="/rsschool-cv/img/icon.png" type="image/png">
+    <link rel="stylesheet" href="/rsschool-cv/style.css">
+</head>
+<body class="sub">
+    <header>
+        <nav class="navigation">
+            <ul class="nav__items">
+                <li class="item">
+                    <a href="#about">About myself</a>
+                </li>
+                <li class="item">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="item">
+                    <a href="#skills">Key skills</a>
+                </li>
+                <li class="item">
+                    <a href="#code">Code example</a>
+                </li>
+                <li class="item">
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header">
+            <div class="photo">
+                <img src="/rsschool-cv/img/photo.jpg" width="280" height="280" alt="My photo">
+            </div>
+            <div class="name">
+                <h1>ELENA KOROBOVA</h1>
+                <hr>
+                <p>Frontend-developer</p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="left__side">
+            <div class="left__info">
+                <h2>EDUCATION</h2>
+                <hr>
+                <ol>
+                    <li>
+                        <b>National university of science and technology «MISIS», Moscow</b><br><br>Direction of training:<br> <span>Information technologies and computer sciences</span><br>Level of education:<br> <span>Engineer in the field of control and informatics in technical systems</span><br>Duration of study:<br> <span>Five years of study, 5.0 GPA</span>
+                    </li>
+                    <li>
+                        <b>Federal state budget educational institution of higher education «MIREA – Russian Technological University», Moscow</b><br><br>Direction of training:<br> <span>Information technology</span><br>Level of education:<br> <span>Master’s degree in information systems and technology</span><br>Duration of study:<br> <span>Two years of study, 5.0 GPA</span>
+                    </li>
+                </ol>
+                <h2>COURSES</h2>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://netology.ru/" target="_blank">Netology:</a><br><span>Frontend developer from scratch</span>
+                    </li>
+                    <li>
+                        <a href="https://rollingscopes.com/" target="_blank">Rolling Scope School:</a><br><span>JavaScript/Front-end (stage 0)</span>
+                    </li>
+                    <li>
+                        <a href="https://rollingscopes.com/" target="_blank">Rolling Scope School:</a><br><span>JavaScript/Front-end (stage 1)</span>
+                    </li>
+                </ul>
+                <h2>LANGUAGES</h2>
+                <hr>
+                <ul class="language">
+                    <li>Russian - native</li>
+                    <li>English - Intermediate (B1)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right__side">
+            <div class="right__info">
+                <div class="right__about" id="about">
+                    <p>About myself</p>
+                    <hr>
+                    <p>For a long time (more than 7 years) I have been working in a state organization, I am engaged in the design, development and implementation of the <abbr title="State Defense Order">SDO</abbr> management systems. During this time I have gained a lot of practical experience and many important skills. I recently started learning front-end development. Now I actively and with great pleasure study this area and devote all my time to it.</p>
+                </div>
+                <div class="right__exp" id="projects">
+                    <p>Projects</p>
+                    <hr>
+                    <p>These projects were created as a result of an intensive course on the <a href="https://methed.ru/" target="_blank">METHED</a> educational platform</p>
+                    <ul>
+                        <li>Promo site 
+                            <a href="https://wee-owl.github.io/The-Batman-Project/" target="_blank">«The Batman project»</a>
+                        </li>
+                        <li>News portal 
+                            <a href="https://wee-owl.github.io/News-aggregator/" target="_blank">«News aggregator»</a>
+                        </li>
+                        <li>Game 
+                            <a href="https://wee-owl.github.io/Tetris/" target="_blank">«Tetris»</a>
+                        </li>
+                        <li>Site 
+                            <a href="https://wee-owl.github.io/E-Trans/" target="_blank">«E-Trans»</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right__comp" id="skills">
+                    <p>Key skills</p>
+                    <hr>
+                    <p>Hard skills</p>
+                    <ul>
+                        <li><span>Programming skills:</span> HTML, CSS, JavaScript (basic), MySQL, SQL, C/C++ (basic)</li>
+                        <li><span>VCS:</span> Git, GitHub</li>
+                        <li><span>IDE:</span> IntelliJ IDEA, Visual Studio Code</li>
+                        <li><span>Database management:</span> MS Access, MS Power BI, MySQL, Oracle</li>
+                    </ul>
+                    <p>Soft skills</p>
+                    <ul>
+                        <li>Time management</li>
+                        <li>Flexibility/adaptability</li>
+                        <li>Attention to detail</li>
+                    </ul>
+                </div>
+                <div class="right__code" id="code">
+                    <p>Code example</p>
+                    <hr>
+                    <p>Task from <a href="https://www.codewars.com/" target="_blank">Codewars</a> «Highest and Lowest» <br> This assignment is given a string of space-separated numbers and must return the largest and smallest number</p>
+                    <p><code>
+                        function highAndLow(numbers) {<br>
+                            &nbsp;&nbsp;&nbsp;var str = numbers.replace(/ /gi, ',');<br>
+                            &nbsp;&nbsp;&nbsp;var i = JSON.parse("[" + str + "]");<br>
+                            &nbsp;&nbsp;&nbsp;var x = String(i.sort((a,b)=>b-a)[0]);<br>
+                            &nbsp;&nbsp;&nbsp;var y = String(i.sort((a,b)=>b-a)[i.length-1]);<br>
+                            return x + ' ' + y;<br>
+                        }<br>
+                    </code></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" id="contacts">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="https://github.com/wee-owl/" target="_blank">
+                    <img src="/rsschool-cv/img/github.png" width="32" height="32" alt="Github"><span>Github</span>
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="https://discordapp.com/users/917321743746609183/" target="_blank">
+                    <img src="/rsschool-cv/img/discord.png" width="32" height="32" alt="Discord"><span>Discord</span>
+                </a>
+            </li>
+        </ul>
+            <div class="footer__logo">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <img src="/rsschool-cv/img/rss.svg" width="95" height="35" alt="RSSchool">
+                </a>
+                <p>CREATED IN 2022</p>
+            </div>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="https://t.me/WeeOwl/" target="_blank">
+                    <img src="/rsschool-cv/img/telegram.png" width="32" height="32" alt="Telegram"><span>Telegram</span>
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="mailto:kem-cv@yandex.ru" target="_blank">
+                    <img src="/rsschool-cv/img/email.png" width="32" height="32" alt="E-mail"><span>E-mail</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

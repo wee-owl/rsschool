@@ -1,0 +1,382 @@
+@font-face {
+    font-family: "Alice";
+    src: url("/rsschool-cv/fonts/Alice-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    cursor: url("/rsschool-cv/img/cursor.png"), pointer;
+}
+
+p, 
+ol, 
+hr, 
+ul, 
+h1, 
+h2 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 7px;
+}
+
+a, abbr {
+    text-decoration: none;
+    color: currentColor;
+}
+
+html {
+    background: url("/rsschool-cv/img/cover.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: "Alice", sans-serif;
+}
+
+.sub {
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 3% auto;
+    padding: 10px;
+    background-color: rgba(190, 218, 221, 0.5);
+    border: 5px solid rgb(245, 245, 245);
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+}
+
+.navigation {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 220, 210, 0.8);
+    border-radius: 10px 10px 0 10px;
+}
+
+.nav__items {
+    display: flex;
+    padding: 0;
+    gap: 60px;
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(50, 50, 50, 0.8);
+}
+
+.item a,
+main a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.item a:hover,
+main a:hover {
+    background-size: 100% 2px;
+}
+
+.header {
+    display: flex;
+}
+
+.photo {
+    width: 384px;
+    margin: 10px 10px 0 0;
+    background-color: rgba(180, 150, 140, 0.8);
+    border-radius: 10px 10px 0 0;
+}
+
+.photo img {
+    width: 260px;
+    height: 260px;
+    margin: 10px 62px 10px 62px;
+    border: 5px solid rgb(245, 245, 245);
+    border-radius: 100%;
+}
+
+.name {
+    width: 594px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    text-align: center;
+    background-color: rgba(255, 220, 210, 0.8);
+    border-radius: 0 0 10px 10px;
+}
+
+.name h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.name hr {
+    width: 300px;
+    height: 50px;
+    margin: -20px auto 30px;
+    border: none;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.8);
+    box-shadow: 0 20px 20px -20px rgb(0, 0, 0);
+}
+
+.name p:nth-last-child(1) {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.main {
+    display: flex;
+}
+
+.left__side {
+    width: 40%;
+    margin: 0 10px 0 0;
+    text-align: center;
+    background-color: rgba(180, 150, 140, 0.8);
+    border-radius: 0;
+}
+
+.left__info {
+    padding: 10px 20px 0 20px;
+    font-size: 25px;
+    color:rgb(245, 245, 245);
+}
+
+.left__info p:nth-child(4), 
+.left__info p:nth-child(7), 
+.left__info p:nth-child(10) {
+    margin-top: 15px;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+
+.left__info ol, 
+.left__info ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.left__info li {
+    margin-top: 9px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: justify;
+    color:rgb(80, 80, 80);
+}
+
+.left__info ol li span, 
+.left__info ul li span {
+    font-size: 18px;
+    font-weight: normal;
+    color:rgb(245, 245, 245);
+}
+
+.left__info ol li b {
+    font-size: 20px;
+}
+
+.left__info ul li {
+    margin-left: 5px;
+    list-style-image: url("/rsschool-cv/img/book.png");
+}
+
+.left__info .language li {
+    list-style-image: url("/rsschool-cv/img/lang.png");
+}
+
+.right__side {
+    width: 60%;
+}
+
+.right__info {
+    margin-bottom: 10px;
+    background-color: rgb(255, 240, 235, 0.8);
+    border-radius: 10px;
+}
+
+.right__about,
+.right__exp {
+    width: auto;
+    height: auto;
+    padding: 10px 20px 0 20px;
+    text-align: justify;
+}
+
+.right__about p:nth-of-type(1) {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.right__about p:nth-of-type(2) {
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.right__exp p:nth-of-type(1) {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.right__exp p:nth-of-type(2) {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.right__exp ul {
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:rgba(50, 50, 50, 0.8);
+    list-style-image: url("/rsschool-cv/img/clip.png");
+}
+
+.right__comp {
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.right__comp p:nth-of-type(1), 
+.right__code p:nth-of-type(1) {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.right__comp p:nth-of-type(2), 
+.right__comp p:nth-of-type(3) {
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.right__comp ul li {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color:rgba(50, 50, 50, 0.8);
+    list-style-image: url("/rsschool-cv/img/check.png");
+}
+
+.right__comp ul li span {
+    text-decoration: underline;
+}
+
+.right__comp p:nth-of-type(5), 
+.right__comp p:nth-of-type(6) {
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.right__code {
+    padding: 0 20px 10px 20px;
+    text-align: justify;
+    font-size: 16px;
+    color: rgba(50, 50, 50, 0.8);
+}
+
+.right__code p:nth-of-type(2) {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgba(50, 50, 50, 0.8);
+}
+
+.right__code p:nth-of-type(3) {
+    padding: 5px 0 5px 40px;
+    background-color: rgba(180, 150, 140, 0.3);
+    border-radius: 10px;
+}
+
+.footer {
+    display: flex;
+    height: 60px;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(180, 150, 140, 0.8);
+    border-radius: 0 10px 10px 10px;
+}
+
+.footer__list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__item {
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.footer__item a {
+    display: flex;
+    text-decoration: none;
+}
+
+.footer__item img {
+    margin-right: 10px;
+}
+
+.footer__item span {
+    margin-right: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgb(80, 80, 80);
+}
+
+.footer__logo {
+    margin: 0 50px;
+    text-align: center;
+    transition: 1s;
+}
+
+.footer__logo p {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgb(245, 245, 245);
+}
+
+.footer__item:hover, 
+.footer__logo:hover {
+    transform: scale(1.2);
+}
