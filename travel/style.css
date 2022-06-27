@@ -1,0 +1,573 @@
+@font-face {
+    font-family: "Aleo";
+    src: url("/rsschool/travel/fonts/Aleo-Regular.ttf");
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Magra";
+    src: url("/rsschool/travel/fonts/Magra-Regular.ttf");
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Red_Hat_Text";
+    src: url("/rsschool/travel/fonts/RedHatText-Regular.ttf");
+    font-display: swap;
+    font-weight: 400;
+}
+
+html {
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+h1, h2, p, ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+input, button {
+    font: inherit;
+}
+
+.header__position {
+    position: absolute;
+    width: 100vw;
+    height: 90px;
+    align-items: center;
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header__wrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1440px;
+}
+
+.logo {
+    width: 216px;
+    height: 31px;
+    margin: 25px 0 34px 120px;
+}
+
+.logo__link {
+    display: flex;
+}
+
+.logo__link svg {
+    width: 30px;
+    height: 30px;
+    color: #FFFFFF;
+}
+
+.logo__title {
+    margin-left: 6px;
+    font-family: "Magra";
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.7px;
+    color: #FFFFFF;
+}
+
+.navigation {
+    margin: 35px 196px 35px 158px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 42px;
+}
+
+.items {
+    font-family: "Red_Hat_Text";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.items:hover {
+    transform: scale(1.2);
+    color: #0D606F;
+    font-weight: bold;
+}
+
+.login__button {
+    min-width: 103px;
+    height: 41px;
+    margin: 25px 120px 24px 0;
+    font-family: "Red_Hat_Text";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    transition: 2s background;
+}
+
+.login__button:hover {
+    background: #0D606F linear-gradient(180deg, #ffffff7d 20%, #0d606f 110%);
+}
+
+.preview {
+    width: 100vw;
+    height: 765px;
+    padding-top: 122px;
+    background: url("/rsschool/travel/img/preview.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.hero {
+    position: relative;
+    max-width: 892px;
+    margin-left: calc((100% - 1440px)/2 + 120px);
+}
+
+.title {
+    font-family: "Aleo";
+    font-size: 80px;
+    letter-spacing: 1px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.subtitle {
+    margin: 33px 0 46px 0;
+    font-family: "Aleo";
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.search {
+    display: flex;
+    max-width: 892px;
+    height: 95px;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding: 18px 18px 18px 41px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    transition: 0.5s box-shadow;
+}
+
+.search:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+}
+
+.search__input {
+    max-width: 560px;
+    min-width: 70%;
+    height: 100%;
+    padding: 0;
+    font-family: "Aleo";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 23px;
+    color: #F2785C;
+    border-width: 0px;
+    background-color: transparent;
+}
+
+.search__input::placeholder {
+    color: #F2785C;
+}
+
+.search__input:focus::placeholder {
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.search__input:focus-visible {
+    outline: transparent !important;
+}
+
+.search__input::-webkit-search-cancel-button { 
+    display: none;
+}
+/*
+.search__input::-webkit-search-decoration,
+.search__input::-webkit-search-cancel-button,
+.search__input::-webkit-search-results-button,
+.search__input::-webkit-search-results-decoration
+*/
+.search__button {
+    width: 228px;
+    height: 59px;
+    font-family: "Red_Hat_Text";
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    transition: 2s background;
+}
+
+.search__button:hover {
+    background: #0D606F linear-gradient(180deg, #ffffff7d 20%, #0d606f 110%);
+}
+
+.steps {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.steps__info {
+    margin: 80px auto 97px auto;
+}
+
+.steps__title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Red_Hat_Text";
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 0.5px;
+    color: #F2785C;
+}
+
+.steps__content {
+    display: flex;
+    max-width: 1177px;
+    justify-content: center;
+}
+
+.steps__item {
+    text-align: center;
+}
+
+.steps__item:nth-child(2) {
+    margin-left: 231px;
+    margin-right: 160px;
+}
+
+.steps__block {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px auto;
+    padding-top: 24px;
+    background: #F2785C;
+    border-radius: 16px;
+}
+
+.steps__item p {
+    font-family: "Aleo";
+    font-weight: 400;
+    font-size: 20px;
+    color: #0D606F;
+}
+
+.destinations {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.destin__title {
+    font-family: "Red_Hat_Text";
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 0.8px;
+    color: #F2785C;
+    margin-bottom: 46px;
+}
+
+.slider {
+    width: 1440px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    gap: 60px;
+    height: 800px;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 300%;
+    transition: 1.5s;
+}
+
+.slide__container {
+    height: 800px;
+}
+
+#spain {
+    border-radius: 0 16px 16px 0;
+}
+
+#japan {
+    border-radius: 16px;
+}
+
+#usa {
+    border-radius: 16px 0 0 16px;
+}
+
+.slide__container p {
+    position: absolute;
+    top: 2006px;
+    margin-left: 15px;
+    font-family: "Red_Hat_Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.labels {
+    position: absolute;
+    width: 1440px;
+    gap: 10px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.label__button {
+    background: rgba(242, 120, 92, 0.5);
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.label__button:nth-child(2) {
+    background: #F2785C;
+}
+
+.label__button:hover {
+    background: #F2785C;
+}
+
+.label__button__active {
+    background: #F2785C;
+}
+
+.destin__button {
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
+    height: 59px;
+    margin: 84px auto 80px;
+    padding: 9.5px 31px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+
+.destin__button:hover {
+    background: #0D606F linear-gradient(180deg, #ffffff7d 20%, #0d606f 110%);
+}
+
+.destin__button svg {
+    color: #FFFFFF;
+}
+
+.destin__button span {
+    margin: auto 0;
+    font-family: "Red_Hat_Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+}
+
+.stories__title {
+    font-family: "Red_Hat_Text";
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 0.7px;
+    color: #F2785C;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.background {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 1331px;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    background: url("/rsschool/travel/img/bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.background__blur {
+    width: 100vw;
+    height: 1270px;
+    margin: 0 auto;
+    padding: 40px 0 41px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.stories__list {
+    width: 1201px;
+    height: 1090px;
+    margin: 0 auto;
+}
+
+.stories__item {
+    display: flex;
+    gap: 40px;
+}
+
+.stories__item:nth-child(n+1) {
+    margin-bottom: 30px;
+}
+
+.stories__img {
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+}
+
+.stories__block {
+    width: 760px;
+    font-family: "Aleo";
+    font-weight: 400;
+    font-size: 20px;
+    color: #0D606F;
+}
+
+.stories__subtitle {
+    margin-bottom: 24px;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.stories__info {
+    line-height: 24px;
+}
+
+.stories__block a {
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.stories__button {
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
+    height: 59px;
+    margin: 40px auto 41px;
+    padding: 9.5px 31px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+
+.stories__button:hover {
+    background: #0D606F linear-gradient(180deg, #ffffff7d 20%, #0d606f 110%);
+}
+
+.stories__button svg {
+    color: #FFFFFF;
+}
+
+.stories__button span {
+    margin: auto 0;
+    font-family: "Red_Hat_Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+}
+
+.footer {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    margin: 0 auto;
+    left: calc((100% - 1200px)/2);
+    bottom: -1330px;
+    align-items: center;
+}
+
+#rss, #github {
+    transition: 1s;
+}
+
+#rss:hover, #github:hover {
+    transform: scale(1.2);
+}
+
+.footer__logo {
+    white-space: nowrap;
+    transition: 1s;
+}
+
+.footer__copyright {
+    margin: 0 328px 0 265px;
+    font-family: "Red_Hat_Text";
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer__links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__link {
+    color: #F8F8F8;
+    transition: 1s;
+}
+
+.footer__link:hover {
+    transform: scale(1.2);
+}
