@@ -1,0 +1,73 @@
+# Elena Korobova  
+
+### Contact information  
+
+**E-mail:**     kem-cv@yandex.ru  
+**Phone:**      +7 (991) 881-70-40  
+**GitHub:** [wee-owl](http://github.com/wee-owl)  
+**Discord:** [LenOk](http://discordapp.com/users/#6731)  
+
+### About myself  
+For a long time (more than 7 years) I have been working in a state organization, I am engaged in the design, development and implementation of SDO (the State Defense Order) management systems. During this time I have gained a lot of practical experience and many important skills. I recently started learning front-end development. Now I actively and with great pleasure study this area and devote all my time to it.
+
+## Key skills  
+#### Hard skills  
+- **MS Office:** Excel, Outlook, PowerPoint, Visio, Word  
+- **Database management:** MS Access, MS Power BI, MySQL, Oracle  
+- **Project management:** waterfall/agile, software requirements, business processes (Aris Express, Camunda Modeler)  
+- **Programming skills:** C/C++ (basic), HTML/CSS/JavaScript (basic), MySQL, SQL  
+- **IDE:** IntelliJ IDEA, Visual Studio Code  
+- **VCS:** Git, GitHub  
+#### Soft skills  
+- Time management  
+- Flexibility/adaptability  
+- Attention to detail  
+- Stress resistance  
+- Activity  
+
+## Code examples  
+[Codewars.com](https://www.codewars.com/)  
+**Task «Multiply the number»:** Multiply each number by 5 raised to the number of digits of each number  
+
+```  
+function multiply(number, y) {  
+  function numDigits(number) {  
+    return Math.max(Math.floor(Math.log10(Math.abs(number))), 0) + 1;  
+  }  
+y = Math.pow(5,numDigits(number));  
+return number*y;  
+}  
+```  
+
+## Projects  
+- Promo site [«The Batman project»](https://wee-owl.github.io/The-Batman-Project/)  
+**About:** It's a trial project created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform  
+**Link to github:** [The-Batman-Project](https://github.com/wee-owl/The-Batman-Project/)  
+- News portal [News aggregator](https://wee-owl.github.io/News-aggregator/)  
+**About:** News portal created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform  
+To make it work you need to download zip on your desktop  
+**Link to github:** [News-aggregator](https://github.com/wee-owl/News-aggregator)  
+- Game [Tetris](https://wee-owl.github.io/Tetris/)  
+**About:** The Tetris game created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform    
+**Link to github:** [Tetris](https://github.com/wee-owl/Tetris)  
+- Site [E-Trans](https://wee-owl.github.io/E-Trans/)  
+**About:** Site is created as a result of passing the intensive course of the [METHED](https://methed.ru/) educational platform  
+**Link to github:** [E-Trans](https://github.com/wee-owl/E-Trans)  
+
+## Education  
+1. National university of science and technology «MISIS», Moscow  
+     **Direction of training:** Information technologies and computer sciences  
+     **Level of education:** Engineer in the field of control and informatics in technical systems *(five years of study, 5.0 GPA)*  
+2. Federal state budget educational institution of higher education «MIREA – Russian Technological University», Moscow  
+     **Direction of training:** Information technology  
+     **Level of education:** Master's degree in information systems and technology *(two years of study, 5.0 GPA)*  
+
+## Courses  
+* [RS School](https://rs.school/) course:  
+    + Java Script/Front-end. Stage 0 (in progress)  
+* [Netology](https://netology.ru/) course:  
+    + Frontend developer from scratch    
+
+## Languages  
+**Russian**  –  native  
+**English**  –  Intermediate (B1)
