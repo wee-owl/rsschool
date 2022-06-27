@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Aleo";
-    src: url("/travel/fonts/Aleo-Regular.ttf");
+    src: url("/rsschool/travel/fonts/Aleo-Regular.ttf");
     font-display: swap;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Magra";
-    src: url("/travel/fonts/Magra-Regular.ttf");
+    src: url("/rsschool/travel/fonts/Magra-Regular.ttf");
     font-display: swap;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Red_Hat_Text";
-    src: url("/travel/fonts/RedHatText-Regular.ttf");
+    src: url("/rsschool/travel/fonts/RedHatText-Regular.ttf");
     font-display: swap;
     font-weight: 400;
 }
@@ -143,7 +143,7 @@ input, button {
     width: 100vw;
     height: 765px;
     padding-top: 122px;
-    background: url("/travel/img/preview.jpg") no-repeat center;
+    background: url("/rsschool/travel/img/preview.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -438,7 +438,7 @@ input, button {
     margin: auto;
     left: 0; 
     right: 0;
-    background: url("/travel/img/bg.jpg") no-repeat center;
+    background: url("/rsschool/travel/img/bg.jpg") no-repeat center;
     background-size: cover;
 }
 
