@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Alice";
-    src: url("/rsschool-cv/fonts/Alice-Regular.ttf");
+    src: url("/rsschool/fonts/Alice-Regular.ttf");
 }
 
 * {
     box-sizing: border-box;
-    cursor: url("/rsschool-cv/img/cursor.png"), pointer;
+    cursor: url("/rsschool/img/cursor.png"), pointer;
 }
 
 p, 
@@ -28,7 +28,7 @@ a, abbr {
 }
 
 html {
-    background: url("/rsschool-cv/img/cover.jpg") no-repeat center center fixed;
+    background: url("/rsschool/img/cover.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -194,11 +194,11 @@ main a:hover {
 
 .left__info ul li {
     margin-left: 5px;
-    list-style-image: url("/rsschool-cv/img/book.png");
+    list-style-image: url("/rsschool/img/book.png");
 }
 
 .left__info .language li {
-    list-style-image: url("/rsschool-cv/img/lang.png");
+    list-style-image: url("/rsschool/img/lang.png");
 }
 
 .right__side {
@@ -254,7 +254,7 @@ main a:hover {
     letter-spacing: 1px;
     text-decoration: none;
     color:rgba(50, 50, 50, 0.8);
-    list-style-image: url("/rsschool-cv/img/clip.png");
+    list-style-image: url("/rsschool/img/clip.png");
 }
 
 .right__comp {
@@ -286,7 +286,7 @@ main a:hover {
     font-size: 18px;
     letter-spacing: 1px;
     color:rgba(50, 50, 50, 0.8);
-    list-style-image: url("/rsschool-cv/img/check.png");
+    list-style-image: url("/rsschool/img/check.png");
 }
 
 .right__comp ul li span {
