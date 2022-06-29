@@ -55,36 +55,26 @@ input, button {
     font: inherit;
 }
 
-.header__position {
-    position: absolute;
-    width: 100vw;
+.background {
+    min-width: 1440px;
+    height: 3735px;
+    background-image: url("/rsschool/travel/img/bg1.jpg"), url("/rsschool/travel/img/bg2.jpg"), url("/rsschool/travel/img/bg3.jpg");
+    background-size: 100% 765px, 100% 1639px, 100% 1331px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center top, center top 765px, center bottom;
+}
+
+.header {
     height: 90px;
-    align-items: center;
-    background-color: rgba(242, 120, 92, 0.7);
+    background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
 .header__wrapper {
     display: flex;
+    max-width: 1200px;
     margin: 0 auto;
-    justify-content: center;
-    max-width: 1440px;
-}
-
-.logo {
-    width: 216px;
-    height: 31px;
-    margin: 25px 0 34px 120px;
-}
-
-.logo__link {
-    display: flex;
-}
-
-.logo__link svg {
-    width: 30px;
-    height: 30px;
-    color: #FFFFFF;
+    padding: 25px 0 24px 0;
 }
 
 .logo__title {
@@ -92,12 +82,11 @@ input, button {
     font-family: "Magra";
     font-weight: 600;
     font-size: 32px;
-    letter-spacing: 0.7px;
     color: #FFFFFF;
 }
 
 .navigation {
-    margin: 35px 196px 35px 158px;
+    margin: auto 196px auto 170px;
 }
 
 .nav__list {
@@ -105,7 +94,7 @@ input, button {
     gap: 42px;
 }
 
-.items {
+.nav__items {
     font-family: "Red_Hat_Text";
     font-size: 16px;
     font-weight: 500;
@@ -114,16 +103,15 @@ input, button {
     transition: 1s;
 }
 
-.items:hover {
+.nav__items:hover {
     transform: scale(1.2);
     color: #0D606F;
     font-weight: bold;
 }
 
 .login__button {
-    min-width: 103px;
+    width: 103px;
     height: 41px;
-    margin: 25px 120px 24px 0;
     font-family: "Red_Hat_Text";
     font-size: 16px;
     font-weight: 500;
@@ -140,20 +128,16 @@ input, button {
 }
 
 .preview {
-    width: 100vw;
-    height: 765px;
-    padding-top: 122px;
-    background: url("/rsschool/travel/img/preview.jpg") no-repeat center;
-    background-size: cover;
+    max-width: 1200px;
+    justify-content: left;
+    margin: 32px auto 0 auto;
 }
 
 .hero {
-    position: relative;
     max-width: 892px;
-    margin-left: calc((100% - 1440px)/2 + 120px);
 }
 
-.title {
+.preview__title {
     font-family: "Aleo";
     font-size: 80px;
     letter-spacing: 1px;
@@ -161,7 +145,7 @@ input, button {
     color: #FFFFFF;
 }
 
-.subtitle {
+.preview__subtitle {
     margin: 33px 0 46px 0;
     font-family: "Aleo";
     font-style: italic;
@@ -241,72 +225,74 @@ input, button {
 }
 
 .steps {
-    display: flex;
-    max-width: 1440px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.steps__info {
-    margin: 80px auto 97px auto;
+    max-width: 1200px;
+    margin: 334px auto 97px auto;
 }
 
 .steps__title {
-    margin-bottom: 40px;
     text-align: center;
     font-family: "Red_Hat_Text";
     font-size: 40px;
     line-height: 53px;
     letter-spacing: 0.5px;
     color: #F2785C;
+    text-transform: uppercase;
 }
 
 .steps__content {
+    margin-top: 40px;
     display: flex;
-    max-width: 1177px;
+    text-align: center;
     justify-content: center;
 }
 
-.steps__item {
-    text-align: center;
+.steps__block:nth-of-type(2) {
+    margin: 0 160px 0 231px;
 }
 
-.steps__item:nth-child(2) {
-    margin-left: 231px;
-    margin-right: 160px;
-}
-
-.steps__block {
+.steps__block img {
     width: 100px;
     height: 100px;
-    margin: 0 auto 30px auto;
-    padding-top: 24px;
     background: #F2785C;
     border-radius: 16px;
 }
 
-.steps__item p {
+#trip {
+    padding: 28px 25px 27px 25px;
+}
+
+#calendar {
+    padding: 24px;
+}
+
+#go {
+    padding: 28px 20px 27px 20px;
+}
+
+.steps__block p {
+    margin-top: 30px;
     font-family: "Aleo";
     font-weight: 400;
     font-size: 20px;
+    line-height: 16px;
     color: #0D606F;
 }
 
 .destinations {
+    max-width: 1440px;
     display: grid;
     text-align: center;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .destin__title {
     font-family: "Red_Hat_Text";
     font-size: 40px;
-    line-height: 53px;
+    line-height: 60px;
     letter-spacing: 0.8px;
+    text-transform: uppercase;
     color: #F2785C;
-    margin-bottom: 46px;
+    margin-bottom: 43px;
 }
 
 .slider {
@@ -355,7 +341,7 @@ input, button {
     font-weight: 500;
     font-size: 32px;
     line-height: 42px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -420,6 +406,10 @@ input, button {
     color: #FFFFFF;
 }
 
+.stories {
+    width: 100%;
+}
+
 .stories__title {
     font-family: "Red_Hat_Text";
     font-size: 40px;
@@ -428,22 +418,10 @@ input, button {
     color: #F2785C;
     margin-bottom: 40px;
     text-align: center;
-}
-
-.background {
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
-    height: 1331px;
-    margin: auto;
-    left: 0; 
-    right: 0;
-    background: url("/rsschool/travel/img/bg.jpg") no-repeat center;
-    background-size: cover;
+    text-transform: uppercase;
 }
 
 .background__blur {
-    width: 100vw;
     height: 1270px;
     margin: 0 auto;
     padding: 40px 0 41px;
@@ -525,12 +503,9 @@ input, button {
 }
 
 .footer {
-    position: absolute;
-    z-index: 999;
+    max-width: 1200px;
     display: flex;
-    margin: 0 auto;
-    left: calc((100% - 1200px)/2);
-    bottom: -1330px;
+    margin: 5px auto 0 auto;
     align-items: center;
 }
 
@@ -570,4 +545,12 @@ input, button {
 
 .footer__link:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 1439px) {
+    .background {
+        background-image: url("/rsschool/travel/img/bg.jpg");
+        background-size: auto;
+        background-position: initial;
+    }
 }
