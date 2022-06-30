@@ -57,16 +57,19 @@ input, button {
 .background {
     min-width: 1440px;
     height: 3735px;
-    background-image: url("/rsschool/travel/img/bg1.jpg"), url("/rsschool/travel/img/bg2.jpg"), url("/rsschool/travel/img/bg3.jpg");
-    background-size: 100% 765px, 100% 1639px, 100% 1331px;
+    background-image: url("/img/bg1.jpg"), url("/img/bg2.jpg"), url("/img/bg3.jpg");
+    background-size: 1440px 765px, 1440px 1639px, 1440px 1331px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center top, center top 765px, center bottom;
+    background-color: #FFFFFF;
 }
 
 .header {
     height: 90px;
+    width: 1440px;
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    margin: 0 auto;
 }
 
 .header__wrapper {
