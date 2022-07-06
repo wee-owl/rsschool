@@ -1,1 +1,31 @@
-console.log('Самооценка моей работы:\nВёрстка валидная: +10\nВёрстка семантическая: +20\nВ коде странице присутствуют элементы:\n<header>, <main>, <footer>: +3\nчетыре элемента <section>: +3\nодин заголовок <h1>: +3\nтри заголовка <h2>: +3\nодин элемент <nav>: +3\nдва списка ul > li > a: +3\nчетыре кнопки <button>: +2\nВёрстка соответствует макету: +48\nблок <header>: +6\nсекция preview: +9\nсекция steps: +9\nсекция destinations: +9\nсекция stories: +9\nблок <footer>: +6\nТребования к css: + 12\nдля построения сетки используются флексы или гриды: +2\nпри уменьшении масштаба страницы браузера вёрстка размещается по центру, а не сдвигается в сторону +2\nфоновый цвет тянется на всю ширину страницы: +2\nиконки добавлены в формате .svg: +2\nизображения добавлены в формате .jpg: +2\nесть favicon: +2\nИнтерактивность, реализуемая через css: +20\nплавная прокрутка по якорям: +5\nиконки соцсетей в футере при нажатии на них ведут на гитхаб автора проекта и на страницу курса: +5\nинтерактивность, визуальные эффекты: +5\nплавное изменение внешнего вида элемента при наведении и клике: +5\nИтого: 110');
+// Burger-menu
+
+const burgerButton = document.querySelector('.burger__button');
+const burgerMenu = document.querySelector('.burger__menu');
+const burgerLink = document.querySelector('.burger__link');
+const accountLink = document.querySelector('#account');
+const burgerClose = document.querySelector('.burger__close');
+const burgerBlur = document.querySelector('.blur');
+const stopChange = document.querySelector('.stop');
+
+burgerButton.onclick = function() {
+    burgerMenu.classList.add('burger__menu__active');
+    burgerBlur.classList.add('blur__active');
+    stopChange.classList.add('stop__active');
+};
+
+burgerClose.onclick = function() {
+    burgerMenu.classList.remove('burger__menu__active');
+    burgerBlur.classList.remove('blur__active');
+    stopChange.classList.remove('stop__active');
+};
+
+document.addEventListener('mousedown', function(e) {
+    if (e.target.closest('.blur') !== null  ||  
+        e.target.closest('.burger__link') !== null || 
+        e.target.closest('#account') !== null) {
+            burgerMenu.classList.remove('burger__menu__active');
+            burgerBlur.classList.remove('blur__active');
+            stopChange.classList.remove('stop__active');
+    }  
+});
