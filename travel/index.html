@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Portal</title>
-    <link rel="icon" href="/rsschool/travel/icon/icon.png" type="image/png">
-    <link rel="stylesheet" href="/rsschool/travel/normalize.css">
-    <link rel="stylesheet" href="/rsschool/travel/style.css">
-    <script src="/rsschool/travel/script.js" defer></script>
-    <script src="/rsschool/travel/index.js" defer></script>
+    <link rel="icon" href="/icon/icon.png" type="image/png">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <script src="/index.js" defer></script>
 </head>
 <body class="background stop">
     <div class="gradient">
@@ -17,7 +17,7 @@
     <header class="header">
         <div class="header__wrapper">
             <div class="logo">
-                <img src="/rsschool/travel/icon/logo_icon.svg" alt="Logo">
+                <img src="/icon/logo_icon.svg" alt="Logo">
                 <span class="logo__title">Travel Portal</span>
             </div>
             <nav class="navigation">
@@ -56,7 +56,7 @@
                         <a href="#stories" class="burger__link">Travel Stories</a>
                     </li>
                     <li class="burger__items">
-                        <a href="#account" class="burger__link">Account</a>
+                        <a href="#account" class="burger__link account">Account</a>
                     </li>
                     <li class="burger__items">
                         <a href="#social" class="burger__link">Social Media</a>
@@ -80,15 +80,15 @@
             <h2 class="steps__title">3 steps to the perfect trip</h2>
             <div class="steps__content">
                 <div class="steps__block">
-                    <img src="/rsschool/travel/icon/step1.svg" alt="Trip" width="50" height="45" id="trip">
+                    <img src="/icon/step1.svg" alt="Trip" width="50" height="45" id="trip">
                     <p>Tell us what you want to do</p>
                 </div>
                 <div class="steps__block">
-                    <img src="/rsschool/travel/icon/step2.svg" alt="Calendar" width="52" height="52" id="calendar">
+                    <img src="/icon/step2.svg" alt="Calendar" width="52" height="52" id="calendar">
                     <p>Share us preferable dates</p>
                 </div>
                 <div class="steps__block">
-                    <img src="/rsschool/travel/icon/step3.svg" alt="Go" width="60" height="45" id="go">
+                    <img src="/icon/step3.svg" alt="Go" width="60" height="45" id="go">
                     <p>We will give you recommendations</p>
                 </div>
             </div>
@@ -97,35 +97,45 @@
             <h2 class="destin__title">popular destinations</h2>
             <div class="slider">
                 <div class="slides">
-                    <input type="radio" name="radio__button" id="radio1"/>
-                    <input type="radio" name="radio__button" id="radio2"/>
-                    <input type="radio" name="radio__button" id="radio3"/>
-                    <div class="slide active">
-                        <div class="slide__container">
-                            <p id="spain1440">Spain</p>
-                            <img src="/rsschool/travel/img/spain.jpg" alt="Spain" width="260" height="800" id="spain">
-                        </div>
+                    <div class="slide" id="slide1">
+                            <p>Spain</p>
+                            <img src="/img/spain.jpg" alt="Spain" width="800" height="800" id="spain">
                     </div>
-                    <div class="slide">
-                        <div class="slide__container">
+                    <div class="slide" id="slide2">
                             <p>Japan</p>
-                            <img src="/rsschool/travel/img/japan.jpg" alt="Japan" width="800" height="800" id="japan">
-                        </div>
+                            <img src="/img/japan.jpg" alt="Japan" width="800" height="800" id="japan">
                     </div>
-                    <div class="slide">
-                        <div class="slide__container">
+                    <div class="slide" id="slide3">
                             <p>USA</p>
-                            <img src="/rsschool/travel/img/usa.jpg" alt="USA" width="260" height="800" id="usa">
-                        </div>
+                            <img src="/img/usa.jpg" alt="USA" width="800" height="800" id="usa">
                     </div>
-                    <div class="arrow__left"></div>
-                    <div class="arrow__right__active"></div>
                 </div>
                 <div class="labels">
-                    <label for="radio1" class="label__button"></label>
-                    <label for="radio2" class="label__button"></label>
-                    <label for="radio3" class="label__button"></label>
+                    <div class="label__button btn1" onclick="curSlide(1)"></div>
+                    <div class="label__button btn2  label__button__active" onclick="curSlide(2)"></div>
+                    <div class="label__button btn3" onclick="curSlide(3)"></div>
                 </div>
+            </div>
+            <div class="slidermini">
+                <div class="slidermini__item spain390">
+                    <p>Spain</p>
+                    <img src="/img/spain_390.jpg" alt="Spain" width="360" height="210">
+                </div>
+                <div class="slidermini__item japan390">
+                    <p>Japan</p>
+                    <img src="/img/japan_390.jpg" alt="Japan" width="360" height="210">
+                </div>
+                <div class="slidermini__item usa390">
+                    <p>USA</p>
+                    <img src="/img/usa_390.jpg" alt="USA" width="360" height="210">
+                </div>
+                <div class="labelsmini">
+                    <div class="labelmini__button labelmini__button__active" onclick="currentSlide(1)"></div>
+                    <div class="labelmini__button" onclick="currentSlide(2)"></div>
+                    <div class="labelmini__button" onclick="currentSlide(3)"></div>
+                </div>
+                <div class="arrow__left" onclick="previousSlide()"></div>
+                <div class="arrow__right" onclick="nextSlide()"></div>
             </div>
             <button class="destin__button" type="submit">
                 <svg width="40" height="41" viewbox="0 0 40 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -139,8 +149,8 @@
                 <div class="background__blur">
                     <div class="stories__list">
                         <div class="stories__item">
-                            <img src="/rsschool/travel/img/stories_thailand.jpg" alt="Thailand" width="400" height="250" class="stories__img">
-                            <img src="/rsschool/travel/img/stories_thailand390.jpg" alt="Thailand" width="155" height="130" class="stories__img390">
+                            <img src="/img/stories_thailand.jpg" alt="Thailand" width="400" height="250" class="stories__img">
+                            <img src="/img/stories_thailand390.jpg" alt="Thailand" width="155" height="130" class="stories__img390">
                             <div class="stories__block">
                                 <p class="stories__subtitle">10 Photos of Attractive Thailand</p>
                                 <p class="stories__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -148,8 +158,8 @@
                             </div>
                         </div>
                         <div class="stories__item">
-                            <img src="/rsschool/travel/img/stories_utah.jpg" alt="Utah" width="400" height="250" class="stories__img">
-                            <img src="/rsschool/travel/img/stories_utah390.jpg" alt="Utah" width="155" height="130" class="stories__img390">
+                            <img src="/img/stories_utah.jpg" alt="Utah" width="400" height="250" class="stories__img">
+                            <img src="/img/stories_utah390.jpg" alt="Utah" width="155" height="130" class="stories__img390">
                             <div class="stories__block">
                                 <p class="stories__subtitle">Canyonlands National Park, Utah</p>
                                 <p class="stories__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -157,8 +167,8 @@
                             </div>
                         </div>
                         <div class="stories__item">
-                            <img src="/rsschool/travel/img/stories_mountains.jpg" alt="Mountains" width="400" height="250" class="stories__img">
-                            <img src="/rsschool/travel/img/stories_mountains390.jpg" alt="Mountains" width="155" height="130" class="stories__img390">
+                            <img src="/img/stories_mountains.jpg" alt="Mountains" width="400" height="250" class="stories__img">
+                            <img src="/img/stories_mountains390.jpg" alt="Mountains" width="155" height="130" class="stories__img390">
                             <div class="stories__block">
                                 <p class="stories__subtitle">I left my heart in the Mountains!</p>
                                 <p class="stories__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -166,8 +176,8 @@
                             </div>
                         </div>
                         <div class="stories__item">
-                            <img src="/rsschool/travel/img/stories_desert.jpg" alt="Desert" width="400" height="250" class="stories__img">
-                            <img src="/rsschool/travel/img/stories_desert390.jpg" alt="Desert" width="155" height="130" class="stories__img390">
+                            <img src="/img/stories_desert.jpg" alt="Desert" width="400" height="250" class="stories__img">
+                            <img src="/img/stories_desert390.jpg" alt="Desert" width="155" height="130" class="stories__img390">
                             <div class="stories__block">
                                 <p class="stories__subtitle">The Longest journey in my life!</p>
                                 <p class="stories__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -187,10 +197,10 @@
     <footer class="footer" id="social">
         <div class="footer__logo">
             <a href="https://rs.school/js-stage0/" target="_blank">
-                <img src="/rsschool/travel/icon/rss.svg" alt="RSSchool" width="150" height="50" id="rss">
+                <img src="/icon/rss.svg" alt="RSSchool" width="150" height="50" id="rss">
             </a>
             <a href="https://github.com/wee-owl/" target="_blank">
-                <img src="/rsschool/travel/icon/github.svg" alt="GitHub" width="50" height="50" id="github">
+                <img src="/icon/github.svg" alt="GitHub" width="50" height="50" id="github">
             </a>
         </div>
         <p class="footer__copyright">All Rights Reserved © Travel Portal</p>
@@ -219,6 +229,59 @@
             </li>
         </ul>
     </footer>
+    </div>
+    <div class="modal__window login__window">
+        <div class="modal__window__title">Log in to your account</div>
+        <a href="https://www.facebook.com/login/" target="_blank">
+            <button class="button__signin1">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" transform="translate(0.5)" fill="#1877F2"/>
+                <path d="M24 12.0699C24 5.71857 18.8513 0.569853 12.5 0.569853C6.14872 0.569853 1 5.71857 1 12.0699C1 17.8098 5.20538 22.5674 10.7031 23.4301V15.3941H7.7832V12.0699H10.7031V9.53626C10.7031 6.65407 12.42 5.06204 15.0468 5.06204C16.305 5.06204 17.6211 5.28665 17.6211 5.28665V8.11673H16.171C14.7424 8.11673 14.2969 9.00319 14.2969 9.91264V12.0699H17.4863L16.9765 15.3941H14.2969V23.4301C19.7946 22.5674 24 17.8098 24 12.0699Z" fill="white"/>
+            </svg>
+            <div class="button__text1">Sign In with Facebook</div>
+            </button>
+        </a>
+        <a href="https://accounts.google.com/ServiceLogin" target="_blank">
+            <button class="button__signin2">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" transform="translate(0.5)" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.54 12.2614C23.54 11.4459 23.4668 10.6618 23.3309 9.90909H12.5V14.3575H18.6891C18.4225 15.795 17.6123 17.013 16.3943 17.8284V20.7139H20.1109C22.2855 18.7118 23.54 15.7636 23.54 12.2614Z" fill="#4285F4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 23.4998C15.605 23.4998 18.2081 22.4701 20.1109 20.7137L16.3943 17.8282C15.3645 18.5182 14.0472 18.926 12.5 18.926C9.50474 18.926 6.96951 16.903 6.06519 14.1848H2.22314V17.1644C4.11542 20.9228 8.00451 23.4998 12.5 23.4998Z" fill="#34A853"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.06523 14.1851C5.83523 13.4951 5.70455 12.758 5.70455 12.0001C5.70455 11.2421 5.83523 10.5051 6.06523 9.81506V6.83552H2.22318C1.44432 8.38802 1 10.1444 1 12.0001C1 13.8557 1.44432 15.6121 2.22318 17.1646L6.06523 14.1851Z" fill="#FBBC05"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 5.07386C14.1884 5.07386 15.7043 5.65409 16.8961 6.79364L20.1945 3.49523C18.2029 1.63955 15.5997 0.5 12.5 0.5C8.00451 0.5 4.11542 3.07705 2.22314 6.83545L6.06519 9.815C6.96951 7.09682 9.50474 5.07386 12.5 5.07386Z" fill="#EA4335"/>
+                </svg>                
+                <div class="button__text2">Sign In with Google</div>
+            </button>
+        </a>
+        <div class="modal__decorate">or</div>
+        <label class="modal__label">
+            <span class="modal__text">E-mail</span>
+            <input class="modal__input emailin" placeholder="" name="name" required="">
+        </label>
+        <label class="modal__label">
+            <span class="modal__text">Password</span>
+            <input class="modal__input passwordin" type="password" placeholder="" name="password" required="">
+        </label>
+        <button class="button__sign bsign">Sign In</button>
+        <a class="forgot">Forgot Your Password?</a>
+        <div class="modal__decorlinein"></div>
+        <div class="modal__footnote">Don’t have an account? 
+            <a class="register">Register</a></div>
+    </div>
+    <div class="modal__window regin__window">
+        <div class="modal__window__title">Create account</div>
+        <label class="modal__label">
+            <span class="modal__text">E-mail</span>
+            <input class="modal__input emailup" placeholder="" name="name" required="">
+        </label>
+        <label class="modal__label">
+            <span class="modal__text">Password</span>
+            <input class="modal__input passwordup" type="password" placeholder="" name="password" required="">
+        </label>
+        <button class="button__sign bsigup">Sign Up</button>
+        <div class="modal__decorlineup"></div>
+        <div class="modal__footnote">Already have an account? 
+            <a class="return__register">Log in</a></div>
     </div>
 </body>
 </html>
