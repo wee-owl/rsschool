@@ -706,6 +706,24 @@ input, button {
     outline: transparent !important;
 }
 
+#eyein {
+	position: absolute;
+	top: 432px;
+	right: 65px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+#eyeup {
+	position: absolute;
+	top: 237px;
+	right: 65px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
 .button__sign {
     max-width: 560px;
     padding: 14px 250px;
