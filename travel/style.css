@@ -72,6 +72,26 @@ input, button {
     background-color: #FFFFFF;
 }
 
+.blur {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41,41,41,0.3);
+    backdrop-filter: blur(1px);
+    transition: all .4s ease-in-out;
+}
+
+.blur__active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+}
+
 .header {
     height: 90px;
     background: rgba(242, 120, 92, 0.7);
@@ -307,46 +327,35 @@ input, button {
     margin-bottom: 43px;
 }
 
+.slidermini {
+    display: none;
+}
+
 .slider {
-    width: 1440px;
+    max-width: 2520px;
     height: 800px;
-    overflow: hidden;
 }
 
 .slides {
     display: flex;
+    width: 1440px;
     gap: 60px;
-    height: 800px;
-}
-
-.slides input {
-    display: none;
+    overflow-x: hidden;
 }
 
 .slide {
-    width: 300%;
-    transition: 1.5s;
+    width: 100%;
+    transition: transform 0.1s ease-out;
 }
 
-.slide__container {
-    height: 800px;
-}
-
-#spain {
-    border-radius: 0 16px 16px 0;
-}
-
-#japan {
+.slide img {
+    object-fit: cover;
     border-radius: 16px;
 }
 
-#usa {
-    border-radius: 16px 0 0 16px;
-}
-
-.slide__container p {
+.slide p {
     position: absolute;
-    top: 2006px;
+    top: 718px;
     margin-left: 15px;
     font-family: "Red_Hat_Text";
     font-style: normal;
@@ -358,38 +367,22 @@ input, button {
     color: #FFFFFF;
 }
 
-#spain1440 {
-    display: none;
-}
-
-.slide__container::nth-of-type(1) p {
-    display: none;
-}
-
-.arrow__left, .arrow__right {
-    display: none;
-}
-
 .labels {
     position: absolute;
     width: 1440px;
     gap: 10px;
-    margin-top: 24px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
 .label__button {
-    background: rgba(242, 120, 92, 0.5);
     height: 20px;
     width: 20px;
-    border-radius: 100px;
+    border-radius: 25px;
+    background: rgba(242, 120, 92, 0.5);
     cursor: pointer;
     transition: 1s background;
-}
-
-.label__button:nth-child(2) {
-    background: #F2785C;
 }
 
 .label__button:hover {
@@ -579,6 +572,189 @@ input, button {
     transform: scale(1.2);
 }
 
+.modal__window {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    max-width: 650px;
+    padding: 25px 45px 23px 45px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 1;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.login, .regin {
+    visibility: visible;
+}
+
+.modal__window__title {
+    font-family: "Aleo";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #0D606F;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.button__signin1 {
+    display: flex;
+    max-width: 560px;
+    gap: 15px;
+    background: #1877F2;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    padding: 15px 163.5px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.button__text1 {
+    font-family: "Red_Hat_Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.button__signin2 {
+    display: flex;
+    max-width: 560px;
+    gap: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    padding: 15px 173.5px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.button__text2 {
+    font-family: "Red_Hat_Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    white-space: nowrap;
+}
+
+.modal__decorate::before {
+    content: "";
+    width: 261px;
+    height: 0px;
+    border: 1px solid rgba(13, 96, 111, 0.5);
+}
+
+.modal__decorate {
+    display: flex;
+    gap: 9px;
+    font-family: "Aleo";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+    margin: 10px auto;
+    align-items: center
+}
+
+.modal__decorate::after {
+    content: "";
+    width: 261px;
+    height: 0px;
+    border: 1px solid rgba(13, 96, 111, 0.5);
+}
+
+.modal__label {
+    max-width: 560px;
+}
+
+.modal__text {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Aleo";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+    text-align: start;
+}
+
+.modal__input {
+    width: 100%;
+    height: 54px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-color: #FFFFFF;
+    border-radius: 10px;
+    border-style: none;
+    font-family: "Aleo";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+}
+
+.modal__input:focus-visible {
+    outline: transparent !important;
+}
+
+.button__sign {
+    max-width: 560px;
+    padding: 14px 250px;
+    margin: 5px auto 10px auto;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: "Red_Hat_Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.button__sign:hover {
+    background: #0d5663;
+}
+
+.register, .return__register, .forgot {
+    font-family: "Aleo";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    cursor: pointer;
+}
+
+.modal__decorlinein {
+    border: 1px solid rgba(13, 96, 111, 0.5);
+    margin: 24px auto 20px auto;
+}
+
+.modal__decorlineup {
+    border: 1px solid rgba(13, 96, 111, 0.5);
+    margin: 15px auto 20px auto;
+}
+
+.modal__footnote {
+    font-family: "Aleo";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
 @media (min-width: 391px) and (max-width: 1439px) {
     .background {
         background-image: url("/rsschool/travel/img/bg.jpg");
@@ -692,7 +868,7 @@ input, button {
         box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
         border-radius: 10px;
         text-align: right;
-        transition-duration: 3s;
+        transition-duration: 1.5s;
     }
 
     .burger__menu__active {
@@ -738,26 +914,6 @@ input, button {
         transform: scale(1.2);
         color: #0D606F;
         font-weight: bold;
-    }
-
-    .blur {
-        visibility: hidden;
-        opacity: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(41,41,41,0.3);
-        backdrop-filter: blur(1px);
-        transition: all .4s ease-in-out;
-    }
-
-    .blur__active {
-        visibility: visible;
-        opacity: 1;
-        z-index: 1;
-        cursor: pointer;
     }
 
     .preview {
@@ -855,43 +1011,35 @@ input, button {
     }
 
     .slider {
+        display: none;
+    }
+
+    .slidermini {
+        display: block;
         width: 360px;
         height: 210px;
+        position: relative;
+        margin: auto;
     }
 
-    .slides {
-        display: flex;
-        height: 210px;
-        gap: 0;
-    }
-
-    .slide {
+    .slidermini .slidermini__item img {
+        object-fit: cover;
         width: 100%;
-    }
-
-    .slide__container {
         height: 210px;
-        background-image: url("/rsschool/travel/img/spain_390.jpg");
         border-radius: 16px;
     }
 
-    .slide__container p {
-        top: 483px;
-        margin-left: 15px;
+    .slidermini__item p {
+        position: absolute;
+        left: 15px;
+        font-family: "Red_Hat_Text";
+        font-style: normal;
+        font-weight: 500;
         font-size: 20px;
+        line-height: 42px;
         letter-spacing: 0.5px;
-    }
-
-    #spain1440 {
-        display: block;
-    }
-
-    .slide__container:nth-of-type(1) img {
-        display: none;
-    }
-
-    .slide:nth-of-type(2), .slide:nth-of-type(3) {
-        display: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
     }
 
     .arrow__left {
@@ -900,20 +1048,15 @@ input, button {
         width: 30px;
         height: 30px;
         position: absolute;
-        top: 573px;
-        left: 20px;
-    }
-
-    .arrow__left__active {
-        display: block;
-        background-image: url("/rsschool/travel/icon/arrow__left__active.svg");
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 573px;
-        left: 20px;
+        top: 90px;
+        left: 5px;
         cursor: pointer;
         transition: 1s;
+    }
+
+    .arrow__left:hover {
+        background-image: url("/rsschool/travel/icon/arrow__left__active.svg");
+        transform: scale(1.2);
     }
 
     .arrow__right {
@@ -922,43 +1065,53 @@ input, button {
         width: 30px;
         height: 30px;
         position: absolute;
-        top: 573px;
-        left: 340px;
-    }
-
-    .arrow__right__active {
-        display: block;
-        background-image: url("/rsschool/travel/icon/arrow__right__active.svg");
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 573px;
-        left: 340px;
+        top: 90px;
+        right: 5px;
         cursor: pointer;
         transition: 1s;
     }
 
-    .arrow__left__active:hover, .arrow__right__active:hover {
+    .arrow__right:hover {
+        background-image: url("/rsschool/travel/icon/arrow__right__active.svg");
         transform: scale(1.2);
     }
 
-    .labels {
-        position: absolute;
-        width: 360px;
-        gap: 6px;
-        margin-top: -20px;
+    .slidermini .slidermini__item {
+        animation-name: fade;
+        animation-duration: 0.5s;
     }
 
-    .label__button {
+    @keyframes fade {
+        from {
+            opacity: 0.4
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    .labelsmini {
+        position: absolute;
+        top: 190px;
+        left: 162px;
+        display: flex;
+        gap: 6px;
+    }
+
+    .labelmini__button {
         height: 8px;
         width: 8px;
-    }
-
-    .label__button:nth-child(2) {
         background: rgba(242, 120, 92, 0.5);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 1s background;
     }
 
-    .label__button:nth-child(1), .label__button:nth-child(2):hover {
+    .labelmini__button:hover {
+        background: #F2785C;
+    }
+
+    .labelmini__button__active {
         background: #F2785C;
     }
 
@@ -1092,5 +1245,9 @@ input, button {
 
     .footer__links {
         margin: 0 auto 0 128px;
+    }
+
+    .modal__window {
+        zoom: 0.4;
     }
 }
